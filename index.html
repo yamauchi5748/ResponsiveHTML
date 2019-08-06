@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+
+    <link href="assets/js/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="assets/js/slick.css" rel="stylesheet" type="text/css">
+    <title>ABCD Corporation</title>
+    <meta name="description" content="ABCD Corporationのサイトです">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "ABCD Corporation",
+            "url": "http://ABCD-Corporation.com/"
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/content.css">
+    <script>
+        $(document).ready(function() {
+            $('.slider').slick({
+                dots: true //ドットのナビゲーションを表示
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <!--　ヘッダー　-->
+    <header id="header" class="header">
+        <!--　お知らせ（会社名）　-->
+        <h1 class="header-title">ABCD Corporation</h1>
+
+        <!--　ナビゲーション　-->
+        <ul class="header-nav-container">
+            <li><a class="header-nav-item" href="#" target="_self">会社概要</a></li>
+            <li><a class="header-nav-item" href="#" target="_self">事業紹介</a></li>
+            <li><a class="header-nav-item" href="#" target="_self">採用情報</a></li>
+            <li><a class="header-nav-item" href="#" target="_self">お問い合わせ</a></li>
+        </ul>
+        <div class="dropdown">
+            <input id="dropdown-toggle" class="dropdown-toggle" type="checkbox" data-toggle="dropdown" onclick="clickBtn()">
+            <label for="dropdown-toggle" class="dropdown-toggle-wrapper">
+                <div id="humberger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="cancel-icon"><span></span></div>
+            </label>
+            <ul class="mobile-header-nav">
+                <li><a class="mobile-header-nav-item" href="#" target="_self">会社概要</a></li>
+                <li><a class="mobile-header-nav-item" href="#" target="_self">事業紹介</a></li>
+                <li><a class="mobile-header-nav-item" href="#" target="_self">イベント情報</a></li>
+                <li><a class="mobile-header-nav-item" href="#" target="_self">採用情報</a></li>
+                <li>
+                    <a class="mobile-header-nav-item  mobile-header-nav-last-item" href="#" target="_self">お問い合わせ</a></li>
+            </ul>
+            <div id="black " class="black "></div>
+            <div id="all-black " class="all-black "></div>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="contents ">
+
+        <!--　バナー画像　-->
+        <ul id="banner-image " class="slider banner-image-box ">
+            <li><img class="banner-image-item " src="https://placehold.jp/18/447794/b5b5b5/640x260.png?text=Visual01 " alt="バナー画像"></li>
+            <li><img class="banner-image-item " src="https://placehold.jp/18/447794/b5b5b5/640x260.png?text=Visual02 " alt="バナー画像"></li>
+            <li><img class="banner-image-item " src="https://placehold.jp/18/447794/b5b5b5/640x260.png?text=Visual03 " alt="バナー画像"></li>
+        </ul>
+
+        <div class="contents-box-wrapper ">
+            <!--　お知らせコンテンツボックス　-->
+            <section class="information-contents-box ">
+                <!--　見出し　-->
+                <h2 class="information-title ">お知らせ</h2>
+
+                <!--　お知らせのコンテンツ　-->
+                <div class="information-content ">
+                    <span class="information-date ">2021年10月20日</span>
+                    <div class="news-content-wrapper "><span class="news-content ">NEWS</span></div>
+                    <a class="content-text " href="# " target="_self">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</a>
+                </div>
+                <div class="information-content ">
+                    <span class="information-date ">2021年04月08日</span>
+                    <div class="product-content-wrapper "><span class="product-content ">PRODUCT</span></div>
+                    <a class="content-text " href="# " target="_self">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</a>
+                </div>
+                <div class="information-content ">
+                    <span class="information-date ">2020年12月10日</span>
+                    <div class="news-content-wrapper "><span class="news-content ">NEWS</span></div>
+                    <a class="content-text " href="# " target="_self">テキストテキストテキストテキストテキストテキストテキストテキスト</a>
+                </div>
+                <div class="information-content ">
+                    <span class="information-date ">2020年05月01日</span>
+                    <div class="product-content-wrapper "><span class="product-content ">PRODUCT</span></div>
+                    <a class="content-text " href="# " target="_self">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</a>
+                </div>
+            </section>
+
+            <!--　イベントのコンテンツボックス　-->
+            <section class="event-contents-box">
+
+                <!--　見出し　-->
+                <h2 class="event-title">イベント情報</h2>
+
+                <!--　イベントコンテナー　-->
+                <ul class="event-container">
+                    <!--　イベントのコンテンツ　-->
+                    <li class="event-content-item">
+                        <img class="event-content-image" src="https://placehold.jp/20/eff0f2/ffffff/300x200.png?text=%20%20 " alt="イベント画像">
+                        <span class="event-content-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</span>
+                    </li>
+                    <!--　イベントのコンテンツ　-->
+                    <li class="event-content-item">
+                        <img class="event-content-image" src="https://placehold.jp/20/eff0f2/ffffff/300x200.png?text=%20%20 " alt="イベント画像">
+                        <span class="event-content-text">テキストテキストテキストテキストテキストテキストテキストテキスト</span>
+
+                    </li>
+                    <!--　イベントのコンテンツ　-->
+                    <li class="event-content-item">
+                        <img class="event-content-image" src="https://placehold.jp/20/eff0f2/ffffff/300x200.png?text=%20%20 " alt="イベント画像">
+                        <span class="event-content-text">テキストテキストテキストテキストテキストテキストテキストテキスト</span>
+
+                    </li>
+                    <!--　イベントのコンテンツ　-->
+                    <li class="event-content-item">
+                        <img class="event-content-image" src="https://placehold.jp/20/eff0f2/ffffff/300x200.png?text=%20%20 " alt="イベント画像">
+                        <span class="event-content-text">テキストテキストテキストテキストテキストテキストテキストテキスト</span>
+
+                    </li>
+                    <!--　イベント㝮コンテンツ　-->
+                    <li class="event-content-item">
+                        <img class="event-content-image" src="https://placehold.jp/20/eff0f2/ffffff/300x200.png?text=%20%20 " alt="イベント画像">
+                        <span class="event-content-text">テキストテキストテキストテキストテキストテキストテキストテキスト</span>
+
+                    </li>
+                    <!--　イベントのコンテンツ　-->
+                    <li class="event-content-item">
+                        <img class="event-content-image" src="https://placehold.jp/20/eff0f2/ffffff/300x200.png?text=%20%20 " alt="イベント画像">
+                        <span class="event-content-text">テキストテキストテキストテキストテキストテキストテキストテキスト</span>
+
+                    </li>
+                </ul>
+
+                <!-- イベント一覧ボタン -->
+                <input class="event-list-button " type="button" value="一覧はこちら">
+            </section>
+        </div>
+        <!-- トップページボタン -->
+        <a class="go-top-btn " href="#header" target="_self">
+            <div class="go-top-btn-icon"></div>
+        </a>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer ">
+        <small class="copy-write ">Copyright &#169; ABCD Corporation All Rights Reserved.</small>
+    </footer>
+
+    <script>
+        const black_ele = document.getElementsByClassName("black ")[0];
+        const all_black_ele = document.getElementsByClassName("all-black ")[0];
+        var menu_active = false;
+
+        //ドロップダウンボタンが押されたとき
+        function clickBtn() {
+            // メニューボタンがアクティブな場合
+            console.log(menu_active);
+            if (menu_active) {
+                black_ele.setAttribute('style', 'display: none;');
+                all_black_ele.setAttribute('style', 'display: none;');
+            } else {
+                black_ele.setAttribute('style', 'display: block;');
+            }
+            menu_active = !menu_active;
+        }
+
+        // スクロールの値に応じて暗くする画面を調整
+        window.onscroll = function() {
+            var scroll = document.scrollingElement.scrollTop;
+
+            if (menu_active && scroll > 80) {
+                black_ele.setAttribute('style', 'display: none;');
+                all_black_ele.setAttribute('style', 'display: block;');
+            } else if (menu_active && scroll < 80) {
+                black_ele.setAttribute('style', 'display: block;');
+                all_black_ele.setAttribute('style', 'display: none;');
+            }
+        }
+    </script>
+</body>
+
+</html>
